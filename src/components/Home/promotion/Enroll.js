@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-import FormField from '../../UI/formFields';
-import { validate } from '../../UI/misc';
+import FormField from '../../ui/formFields';
+import { validate } from '../../ui/misc';
  
 import { firebasePromotions } from '../../../firebase';
 
@@ -95,7 +95,6 @@ class Enroll extends Component {
                     this.resetFormSuccess(false);
                 }
             })
-            //this.resetFormSuccess()
         } else {
             this.setState({
                 formError: true
